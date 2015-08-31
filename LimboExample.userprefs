@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../Porsche/Repo/SoundOfPorscheVR/Assets/Scripts/VRInputModule.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LimboStuff/CamFlightAnimationTrigger.cs">
     <Files>
-      <File FileName="../../../Porsche/Repo/SoundOfPorscheVR/Assets/Scripts/VRInputModule.cs" Line="1" Column="1" />
+      <File FileName="Assets/LimboStuff/CamFlightAnimationTrigger.cs" Line="26" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
