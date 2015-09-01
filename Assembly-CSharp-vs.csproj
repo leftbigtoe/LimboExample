@@ -48,12 +48,13 @@
   <ItemGroup>
      <Compile Include="Assets\FadingSphere\AlphaConstantFader.cs" />
      <Compile Include="Assets\FadingSphere\AlphaFader.cs" />
+     <Compile Include="Assets\HideOutsideLimbo.cs" />
      <Compile Include="Assets\LimboStuff\CamFlightAnimationTrigger.cs" />
      <Compile Include="Assets\LimboStuff\LimboController.cs" />
      <Compile Include="Assets\LimboStuff\LimboControllerRelay.cs" />
+     <Compile Include="Assets\LimboStuff\LimboManualRemote.cs" />
      <Compile Include="Assets\LimboStuff\LimboRenderRemote.cs" />
      <Compile Include="Assets\LimboStuff\LimboTextureSwitcher.cs" />
-     <Compile Include="Assets\LimboStuff\ManualRenderRemote.cs" />
      <None Include="Assets\FadingSphere\Unlit_CullOff_AlphaConstant.shader" />
      <None Include="Assets\LimboStuff\UnlitTransparentColor.shader" />
  <Reference Include="UnityEngine.UI">

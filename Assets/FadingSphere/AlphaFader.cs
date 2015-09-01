@@ -29,7 +29,14 @@ public class AlphaFader : MonoBehaviour {
 	void Update () {
 		if ((isVisible && fadeProgress < 1) || !isVisible && fadeProgress > 0) {
 			fadeProgress += Time.deltaTime / tFade * (isVisible ? 1 : -1);
-			rend.material.SetColor(colorName, Color.Lerp(transparentColor, opaqueColor, fadeProgress));
+			rend.material.SetColor (colorName, Color.Lerp (transparentColor, opaqueColor, fadeProgress));
+
+			// when invisible, toggle renderer
+			if(fadeProgress <= 0 && minAlpha <= 0){
+				rend.enabled = false;
+			}else if(!rend.enabled && fadeProgress > 0){
+				rend.enabled = true;
+			}
 		}
 	}
 
@@ -38,6 +45,16 @@ public class AlphaFader : MonoBehaviour {
 	}
 
 	public void fadeOut(){
+		isVisible = false;
+	}
+
+	public void show(){
+		fadeProgress = 1;
+		isVisible = true;
+	}
+
+	public void hide(){
+		fadeProgress = 0;
 		isVisible = false;
 	}
 
